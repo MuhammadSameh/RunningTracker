@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/setup_fragment">
+
+    <action
+        android:id="@+id/global_tracking_fragment"
+        app:destination="@+id/tracking_fragment"
+        app:launchSingleTop="true"
+        />
+
+    <fragment
+        android:id = "@+id/run_fragment"
+        android:name="com.androiddevs.runningappyt.ui.fragments.RunFragment"
+        android:label="fragment_run"
+        tools:layout="@layout/fragment_run">
+
+        <action
+            android:id="@+id/action_run_fragment_to_tracking_fragment"
+            app:destination="@id/tracking_fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id = "@+id/settings_fragment"
+        android:name="com.androiddevs.runningappyt.ui.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings"/>
+
+
+    <fragment
+        android:id = "@+id/setup_fragment"
+        android:name="com.androiddevs.runningappyt.ui.fragments.SetupFragment"
+        android:label="fragment_setup"
+        tools:layout="@layout/fragment_setup">
+
+        <action
+            android:id="@+id/action_setup_fragment_to_run_fragment"
+            app:destination="@id/run_fragment" />
+    </fragment>
+
+
+    <fragment
+        android:id = "@+id/statistics_fragment"
+        android:name="com.androiddevs.runningappyt.ui.fragments.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics">
+
+    </fragment>
+
+
+    <fragment
+        android:id = "@+id/tracking_fragment"
+        android:name="com.androiddevs.runningappyt.ui.fragments.TrackingFragment"
+        android:label="fragment_tracking"
+        tools:layout="@layout/fragment_tracking">
+
+        <action
+            android:id="@+id/action_tracking_fragment_to_run_fragment"
+            app:destination="@id/run_fragment" />
+    </fragment>
+
+
+</navigation>
