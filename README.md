@@ -12,6 +12,9 @@ Lose weight and track Running distance and calories burned.
   <kbd>
     <img src="https://i.imgur.com/QdLL9tn.png" width = "250"/>
   </kbd>
+   <kbd>
+    <img src="https://i.imgur.com/qMKwPS5.png" width = "250"/>
+  </kbd>
 </div>
 
 ## Description
