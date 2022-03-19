@@ -19,7 +19,7 @@ Lose weight and track Running distance and calories burned.
 
 ## Description
 
-This app is used to track your runs, including all details like distance, time, date, claories burnt, starting and end location.
+This app is used to track your runs, including all details like distance, time, date, calories burnt, starting and end location.
 
 ### Features
 
